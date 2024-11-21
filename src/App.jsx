@@ -1,9 +1,13 @@
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
+import AppRoutes from './routes/routes';
 
 function App() {
   return (
     <>
-      <h1 className="text-red-400">BIKE</h1>
+      <BrowserRouter>
+        <AppRoutes />
+      </BrowserRouter>
     </>
   );
 }
