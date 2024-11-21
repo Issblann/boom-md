@@ -1,5 +1,5 @@
-import React from "react";
-import decoration from "../../public/img/elipse.png";
+import React from 'react';
+import decoration from '../../public/img/elipse.png';
 
 function About() {
   return (
@@ -23,11 +23,14 @@ function About() {
 
         {/* Text Section */}
         <div className="text-center md:text-left md:w-[30%] z-10 relative p-6">
-          <h1 className="text-7xl font-extrabold text-blue-600 mt-2 mb-5">Boom</h1>
+          <h1 className="text-7xl font-extrabold text-blue-600 mt-2 mb-5">
+            Boom
+          </h1>
           <h2 className="text-xl text-gray-600 font-medium">Quiénes Somos</h2>
           <div id="info" className="mt-6 text-gray-800">
             <p className="text-lg leading-relaxed">
-              Somos boom 🧸! estamos aqui para ayudarte a encontrar una forma sostenible y agil para tu movilizacion    
+              Somos boom 🧸! estamos aqui para ayudarte a encontrar una forma
+              sostenible y agil para tu movilizacion
             </p>
           </div>
         </div>

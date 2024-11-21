@@ -1,3 +1,6 @@
+import { BrowserRouter } from 'react-router-dom';
+import './App.css';
+import AppRoutes from './routes/routes';
 import { useDispatch, useSelector } from 'react-redux';
 import './App.css';
 import { useEffect } from 'react';
@@ -28,8 +31,9 @@ function App() {
   console.log(selectedStation, 'selectedStation');
   return (
     <>
-      <Navbar />
-      <Home />
+      <BrowserRouter>
+        <AppRoutes />
+      </BrowserRouter>
     </>
   );
 }
