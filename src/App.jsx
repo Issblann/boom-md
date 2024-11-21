@@ -1,9 +1,12 @@
 import './App.css';
+import Home from './components/home';
+import Navbar from './components/navbar'
 
 function App() {
   return (
     <>
-      <h1 className="text-red-400">BIKE</h1>
+    <Navbar />
+    <Home />
     </>
   );
 }
