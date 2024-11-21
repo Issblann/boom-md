@@ -1,16 +1,18 @@
-import React, { useState } from "react";
-import Logo from "../../public/img/logoblack.png";
+import React, { useState } from 'react';
+import Logo from '../../public/img/logoblack.png';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="bg-whiteDark text-gray-800 shadow-lg">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 " >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <img src={Logo} alt="Logo" className="w-16 md:w-20" /> {/* Logo más pequeño */}
+            <img src={Logo} alt="Logo" className="w-16 md:w-20" />{' '}
+            {/* Logo más pequeño */}
           </div>
 
           {/* Toggle Button (Mobile) */}
@@ -48,33 +50,22 @@ function Navbar() {
           {/* Links */}
           <div
             className={`${
-              isOpen ? "block" : "hidden"
+              isOpen ? 'block' : 'hidden'
             } md:flex md:items-center md:space-x-6`}
           >
-            <a
-              href="#home"
+            <Link
+              to="/"
               className="block mt-2 md:mt-0 text-gray-800 hover:text-gray-500"
             >
               Inicio
-            </a>
-            <a
-              href="#about"
+            </Link>
+
+            <Link
+              to="/descubre"
               className="block mt-2 md:mt-0 text-gray-800 hover:text-gray-500"
             >
-              Sobre Nosotros
-            </a>
-            <a
-              href="#services"
-              className="block mt-2 md:mt-0 text-gray-800 hover:text-gray-500"
-            >
-              Servicios
-            </a>
-            <a
-              href="#contact"
-              className="block mt-2 md:mt-0 text-gray-800 hover:text-gray-500"
-            >
-              Contacto
-            </a>
+              Descubre
+            </Link>
           </div>
         </div>
       </div>

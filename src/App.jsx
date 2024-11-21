@@ -8,6 +8,7 @@ import { thunks } from './redux/slice/thunks';
 import { actions } from './redux/slice/slice';
 import Home from './components/home';
 import Navbar from './components/navbar';
+import Layout from './layout/layout';
 
 function App() {
   const dispatch = useDispatch();
@@ -32,7 +33,9 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <AppRoutes />
+        <Layout>
+          <AppRoutes />
+        </Layout>
       </BrowserRouter>
     </>
   );
