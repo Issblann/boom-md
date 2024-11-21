@@ -3,6 +3,8 @@ import './App.css';
 import { useEffect } from 'react';
 import { thunks } from './redux/slice/thunks';
 import { actions } from './redux/slice/slice';
+import Home from './components/home';
+import Navbar from './components/navbar';
 
 function App() {
   const dispatch = useDispatch();
@@ -26,24 +28,8 @@ function App() {
   console.log(selectedStation, 'selectedStation');
   return (
     <>
-      {/* <div>
-        <h1>Stations</h1>
-        <ul>
-          {stations?.stations?.map((station) => (
-            <>
-              <li key={station.id}>{station.name}</li>
-              <button
-                onClick={() => handlerFilter(station.id)}
-                className="bg-red-500 p-2 rounded-md"
-              >
-                info por estacion
-              </button>
-              <br />
-            </>
-          ))}
-        </ul>
-      </div> */}
-      <h1>Principal</h1>
+      <Navbar />
+      <Home />
     </>
   );
 }
