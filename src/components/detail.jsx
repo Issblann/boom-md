@@ -13,7 +13,6 @@ const Detail = () => {
   return (
     <div className="container mx-auto p-6">
       <div className="flex flex-col lg:flex-row items-center lg:items-start bg-white rounded-lg shadow-lg overflow-hidden">
-        {/* Información de la estación */}
         <div className="lg:w-1/2 p-6 text-gray-800">
           <h1 className="text-3xl font-bold mb-4">{selectedStation?.name}</h1>
           <p className="text-gray-600 mb-4 flex items-center">
@@ -60,7 +59,6 @@ const Detail = () => {
           </div>
         </div>
 
-        {/* Imagen y acción de reserva */}
         <div className="lg:w-1/2 p-6 flex flex-col items-center">
           <img
             src={estacion}
