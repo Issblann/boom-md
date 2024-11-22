@@ -23,7 +23,7 @@ function About() {
 
         {/* Text Section */}
         <div className="text-center md:text-left md:w-[30%] z-10 relative p-6">
-          <h1 className="text-7xl font-extrabold text-blue-600 mt-2 mb-5">
+          <h1 className="text-7xl font-extrabold text-black mt-2 mb-5">
             Boom
           </h1>
           <h2 className="text-xl text-gray-600 font-medium">Quiénes Somos</h2>
