@@ -31,8 +31,6 @@ function App() {
           <AppRoutes />
         </Layout>
       </BrowserRouter>
-      <Plans/>
-
     </>
   );
 }
