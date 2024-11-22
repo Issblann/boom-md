@@ -48,7 +48,7 @@ const Plans = () => {
         </div>
 
       
-        <div className="bg-gradient-to-r from-purple-600 to-blue-500 p-6 text-white rounded-xl shadow-lg transform transition-all hover:scale-105 hover:shadow-2xl">
+        <div className="bg-gradient-to-r from-blue-400 to-purple-600 p-6 text-white rounded-xl shadow-lg transform transition-all hover:scale-105 hover:shadow-2xl">
           <h2 className="text-2xl font-semibold mb-4">Plan Premium</h2>
           <p className="text-sm text-gray-200 mb-4">
             Diseñado para quienes buscan el máximo confort:
