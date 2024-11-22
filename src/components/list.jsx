@@ -33,7 +33,6 @@ const List = () => {
                 <a
                   target="_blank"
                   href={`https://www.google.com/maps/search/?api=1&query=${station.latitude},${station.longitude}`}
-                  // href="https://www.google.com/maps"
                   className="text-blue-300 hover:underline"
                   onClick={(e) => e.stopPropagation()}
                 >

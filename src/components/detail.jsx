@@ -17,7 +17,7 @@ const Detail = () => {
             <LocationOn className="mr-2 text-blue-500" />
             Ubicación:{' '}
             <a
-              // href={station.mapLink}
+              href={`https://www.google.com/maps/search/?api=1&query=${selectedStation.latitude},${selectedStation.longitude}`}
               className="text-blue-500 hover:underline ml-1"
               target="_blank"
               rel="noopener noreferrer"
