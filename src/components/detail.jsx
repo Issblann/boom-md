@@ -8,8 +8,6 @@ import estacion from '../assets/estaciones.jpg';
 const Detail = () => {
   const { selectedStation } = useSelector((state) => state.stations);
 
-  console.log(selectedStation, 'selectedStations en detalles');
-
   return (
     <div className="container mx-auto p-6">
       <div className="flex flex-col lg:flex-row items-center lg:items-start bg-white rounded-lg shadow-lg overflow-hidden">

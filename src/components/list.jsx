@@ -8,13 +8,10 @@ const List = () => {
   const dispatch = useDispatch();
   const { stations, selectedStation } = useSelector((state) => state.stations);
 
-  console.log(stations, 'stations');
-
   const handlerFilter = (id) => {
     dispatch(actions.filterStationById(id));
   };
 
-  console.log(selectedStation, 'selectedStations');
   return (
     <div className="container mx-auto p-4 m-[5%]">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">

@@ -19,7 +19,6 @@ const extraReducers = (builder) => {
       state.error = action.payload;
     })
     .addCase(thunks.getVehiclesTypes.fulfilled, (state, action) => {
-      console.log('action.payload', action.payload);
       state.status = 'succeeded';
       state.vehiclesTypesData = action.payload;
     })

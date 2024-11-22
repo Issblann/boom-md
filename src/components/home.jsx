@@ -1,11 +1,12 @@
 import React from 'react';
 import decoration from '../../public/img/elipse.png';
 import CompanyInfo from '../components/companyInfo';
+import Plans from './plans';
 
 function About() {
   return (
-    <>
-      <div className="flex flex-col items-center justify-center h-screen w-full bg-white relative overflow-hidden bg-whiteDark">
+    <div className="bg-whiteDark">
+      <div className="flex flex-col items-center justify-center h-screen w-full  relative overflow-hidden bg-whiteDark">
         <div
           id="reductor"
           className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center space-y-10 md:space-y-0 relative h-full w-full"
@@ -41,7 +42,8 @@ function About() {
         </div>
       </div>
       <CompanyInfo />
-    </>
+      <Plans />
+    </div>
   );
 }
 

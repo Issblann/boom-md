@@ -21,9 +21,6 @@ function App() {
     dispatch(thunks.getInformationCity('encicla'));
   }, []);
 
-  console.log(plansData, 'plansData');
-  console.log(vehiclesTypesData);
-
   return (
     <>
       <BrowserRouter>
