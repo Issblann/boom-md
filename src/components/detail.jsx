@@ -1,6 +1,10 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 
 const Detail = () => {
+  const { selectedStation } = useSelector((state) => state.stations);
+
+  console.log(selectedStation, 'selectedStations');
   return (
     <div className="container mx-auto p-4">
       <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-between bg-white rounded-lg shadow-md overflow-hidden">
