@@ -9,6 +9,7 @@ import { actions } from './redux/slice/slice';
 import Home from './components/home';
 import Navbar from './components/navbar';
 import Layout from './layout/layout';
+import Plans from './components/plans';
 
 function App() {
   const dispatch = useDispatch();
@@ -37,6 +38,8 @@ function App() {
           <AppRoutes />
         </Layout>
       </BrowserRouter>
+      <Plans/>
+
     </>
   );
 }

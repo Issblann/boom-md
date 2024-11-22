@@ -9,13 +9,9 @@ function Navbar() {
     <nav className="bg-whiteDark text-gray-800 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
           <div className="flex-shrink-0">
             <img src={Logo} alt="Logo" className="w-16 md:w-20" />{' '}
-            {/* Logo más pequeño */}
           </div>
-
-          {/* Toggle Button (Mobile) */}
           <div className="flex md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -47,7 +43,6 @@ function Navbar() {
             </button>
           </div>
 
-          {/* Links */}
           <div
             className={`${
               isOpen ? 'block' : 'hidden'
