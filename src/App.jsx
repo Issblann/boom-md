@@ -18,8 +18,6 @@ function App() {
 
   useEffect(() => {
     dispatch(thunks.getInformationCity('encicla'));
-    dispatch(thunks.getPricingPlans());
-    dispatch(thunks.getVehiclesTypes());
   }, []);
 
   console.log(plansData, 'plansData');
