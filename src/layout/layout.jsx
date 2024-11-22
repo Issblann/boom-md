@@ -5,7 +5,7 @@ import Footer from '../components/footer'
 
 const Layout = ({ children }) => {
   return (
-    <div className="principal-container-layout">
+    <div className="bg-whiteDark">
       <Navbar />
       <main>{children}</main>
       {/* <Footer /> */}
