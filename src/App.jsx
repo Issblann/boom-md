@@ -9,27 +9,21 @@ import { actions } from './redux/slice/slice';
 import Home from './components/home';
 import Navbar from './components/navbar';
 import Layout from './layout/layout';
+import Plans from './components/plans';
 
 function App() {
   const dispatch = useDispatch();
-  const { stations, plansData, vehiclesTypesData, selectedStation } =
-    useSelector((state) => state.stations);
+  const { plansData, vehiclesTypesData } = useSelector(
+    (state) => state.stations
+  );
 
   useEffect(() => {
-    dispatch(thunks.getInformationCity('tembici-bogota'));
-    dispatch(thunks.getPricingPlans());
-    dispatch(thunks.getVehiclesTypes());
+    dispatch(thunks.getInformationCity('encicla'));
   }, []);
 
-  console.log(stations);
   console.log(plansData, 'plansData');
   console.log(vehiclesTypesData);
 
-  const handlerFilter = (id) => {
-    dispatch(actions.filterStationById(id));
-  };
-
-  console.log(selectedStation, 'selectedStation');
   return (
     <>
       <BrowserRouter>
