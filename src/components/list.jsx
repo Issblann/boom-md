@@ -23,9 +23,9 @@ const List = () => {
             <div
               onClick={() => handlerFilter(station.id)}
               key={station.id}
-              className="bg-gradient-to-r cursor-pointer from-blue-500 to-blue-600 p-6 text-white rounded-xl shadow-xl transform transition-all hover:scale-105 hover:shadow-2xl"
+              className="bg-gradient-to-r cursor-pointer from-blue-500 to-blue-600 p-6 text-white rounded-xl shadow-xl transform transition-all h-full max-h-[450px] hover:scale-105 hover:shadow-2xl"
             >
-              <h2 className="text-2xl font-semibold">{station.name}</h2>
+              <h2 className="text-1xl font-semibold">{station.name}</h2>
               <img
                 src={estacion}
                 alt="Imagen Estación 2"
@@ -38,6 +38,7 @@ const List = () => {
                   href={`https://www.google.com/maps/search/?api=1&query=${station.latitude},${station.longitude}`}
                   // href="https://www.google.com/maps"
                   className="text-blue-300 hover:underline"
+                  onClick={(e) => e.stopPropagation()}
                 >
                   Ver en el mapa
                 </a>
